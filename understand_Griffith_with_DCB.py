@@ -113,8 +113,8 @@ def animation():
 
     ### Sliders
     axcolor = 'lightgoldenrodyellow'
-    ax_delta = plt.axes([0.25, 0.1, 0.65, 0.03], axisbg=axcolor)
-    ax_Gc = plt.axes([0.25, 0.15, 0.65, 0.03], axisbg=axcolor)
+    ax_delta = plt.axes([0.25, 0.1, 0.65, 0.03], facecolor=axcolor)
+    ax_Gc = plt.axes([0.25, 0.15, 0.65, 0.03], facecolor=axcolor)
 
     slider_delta = Slider(ax_delta, 'delta (loading)', 0., 5e-3, valinit=delta0)
     slider_Gc = Slider(ax_Gc, 'Gc (moving Gc implies reset a)', 10, 500, valinit=Gc)
